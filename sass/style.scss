@@ -1,75 +1,95 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
 $grey-1: #353535;
 $grey-2: #eaeaea;
 
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-primary {
+    padding: 13px 16px;
+    background: linear-gradient(175deg, $secondary-color 0%, $primary-color 100%);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #ffffff;
+    transition: 300ms ease-out;
+    &:hover {
+        opacity: 0.8;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+    }
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-width: 375px;
+    max-height: 63px;
+    margin: 23px 89px 13px 89px;
+    padding-left: 16px;
+    padding-right: 19px;
+  }
+  .location {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    img {
-        max-width: 375px;
-        max-height: 63px;
-        margin: 23px 89px 13px 89px;
-        padding-left: 16px;
-        padding-right: 19px;
+    width: 100%;
+    height: 50px;
+    gap: 17px;
+    color: $grey-1;
+    background-color: $grey-2;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 5px 5px 0px inset;
+    i {
+      width: 12px;
+      height: 16px;
     }
-    .location {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 50px;
-        gap: 17px;
-        color: $grey-1;
-        background-color: $grey-2;
-        box-shadow: rgba(0, 0, 0, 0.06) 0px 5px 5px 0px inset;
-        i {
-            width: 12px;
-            height: 16px;
-        }
-        p {
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal
-        }
+    p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
     }
+  }
 }
 
-main {
-    margin-top: 39px;
-    margin-left: 17px;
-    margin-right: 17px; 
-    margin-bottom: 66px;
-    .hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: #F6F6F6; // esse background nao rolou pq nao aplica em toda a seção. Rever as margens de tudo. Quem sabe pensar num mixin pra margens laterais
-        h1 {
-            margin: 0;
-        }
-        p {
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
-            margin-top: 18px;
-            margin-bottom: 27px;
-        }
-    }
-    .fonctionnement {
-        margin-top: 48px;
-        h1 {
-            margin: 0;
-        }
-    }
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  padding-left: 34px;
+  padding-right: 26px;
+  background: #f6f6f6;
+  h1 {
+    margin: 0;
+  }
+  p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 18px;
+    margin-bottom: 27px;
+  }
+}
+
+.fonctionnement {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  margin-left: 20px;
 }
