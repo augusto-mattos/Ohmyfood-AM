@@ -39,4 +39,36 @@ header .location p {
   line-height: normal;
 }
 
+main {
+  margin-top: 39px;
+  margin-left: 17px;
+  margin-right: 17px;
+  margin-bottom: 66px;
+}
+main .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #F6F6F6;
+}
+main .hero h1 {
+  margin: 0;
+}
+main .hero p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 18px;
+  margin-bottom: 27px;
+}
+main .fonctionnement {
+  margin-top: 48px;
+}
+main .fonctionnement h1 {
+  margin: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

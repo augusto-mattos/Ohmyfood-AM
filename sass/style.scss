@@ -41,3 +41,35 @@ header {
         }
     }
 }
+
+main {
+    margin-top: 39px;
+    margin-left: 17px;
+    margin-right: 17px; 
+    margin-bottom: 66px;
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #F6F6F6; // esse background nao rolou pq nao aplica em toda a seção. Rever as margens de tudo. Quem sabe pensar num mixin pra margens laterais
+        h1 {
+            margin: 0;
+        }
+        p {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-top: 18px;
+            margin-bottom: 27px;
+        }
+    }
+    .fonctionnement {
+        margin-top: 48px;
+        h1 {
+            margin: 0;
+        }
+    }
+}
