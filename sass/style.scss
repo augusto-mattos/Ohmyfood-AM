@@ -142,26 +142,70 @@ header {
           margin-top: 5px;
           margin-bottom: 12px;
         }
-        .card-like {
-          padding: 0;
-          align-items: center;
+      }
+      .btn-like {
+        border: none;
+        background: none;
+        padding: 0;
+        .fa-regular {
+          font-size: 1.25rem;
+          &:hover {
+            display: none;
+          }
+        }
+        .fa-solid {
+          display: none;
+          font-size: 1.25rem;
+          &:hover {
+            display: block;
+            color: linear-gradient(0deg, $secondary-color 0%, $primary-color 100%);
+          }
         }
       }
     }
-    .tag-nouveau {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 62px;
-      height: 16px;
-      padding: 7px 9px 9px 6px;
-      border-radius: 2px;
-      position: absolute;
-      bottom: 200px;
-      right: 10px;
-      color: #008766;
-      background-color: $tertiary-color;
-      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+  .tag-nouveau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 16px;
+    margin: 0;
+    padding: 7px 9px 9px 6px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 216px;
+    right: 10px;
+    color: #008766;
+    background-color: $tertiary-color;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+footer {
+  background-color: $grey-1;
+  padding: 22px 25px;
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    h2 {
+      color: #ffffff;
+      font-family: Shrikhand;
+      font-weight: 400;
+      margin-bottom: 9px;
+    }
+    a {
+      color: #ffffff;
+      font-size: 16px;
+      margin: 0;
+      &:hover {
+        cursor: pointer;
+      }
+      i {
+        width: 11px;
+        margin-right: 15px;
+      }
     }
   }
 }
