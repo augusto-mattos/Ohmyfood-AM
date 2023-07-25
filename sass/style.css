@@ -172,22 +172,30 @@ header .location i {
   margin-bottom: 12px;
 }
 .restaurants .card-restaurant a .btn-like {
+  display: flex;
+  align-items: center;
   border: none;
+  margin-right: 35px;
   background: none;
   padding: 0;
+  position: relative;
 }
-.restaurants .card-restaurant a .btn-like .fa-regular {
-  font-size: 1.25rem;
+.restaurants .card-restaurant a .btn-like .empty-heart {
+  font-size: 1.05rem;
+  position: absolute;
 }
-.restaurants .card-restaurant a .btn-like .fa-regular:hover {
-  display: none;
+.restaurants .card-restaurant a .btn-like .empty-heart:hover {
+  opacity: 0;
+  transition: opacity 700ms;
 }
-.restaurants .card-restaurant a .btn-like .fa-solid {
-  display: none;
-  font-size: 1.25rem;
+.restaurants .card-restaurant a .btn-like .full-heart {
+  font-size: 1.05rem;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 700ms;
 }
-.restaurants .card-restaurant a .btn-like .fa-solid:hover {
-  display: block;
+.restaurants .card-restaurant a .btn-like .full-heart:hover {
+  opacity: 1;
   color: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
 }
 .restaurants .tag-nouveau {
