@@ -97,6 +97,44 @@ header .location i {
 .fonctionnement {
   padding: 48px 20px;
 }
+.fonctionnement h1 {
+  margin-bottom: 30px;
+}
+.fonctionnement .etapes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  padding-left: 34.5px;
+  margin-left: 12.5px;
+  margin-bottom: 25px;
+  gap: 27px;
+  height: 72.4px;
+  max-width: 100%;
+  background: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.fonctionnement .etapes .fa-mobile-screen-button, .fonctionnement .etapes .fa-list {
+  color: #7E7E7E;
+}
+.fonctionnement .etapes .fa-store {
+  color: #9356dc;
+}
+.fonctionnement .etapes .counter {
+  position: absolute;
+  left: -10px;
+  border-radius: 12px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9356dc;
+  color: #ffffff;
+  font-size: 14.182px;
+  font-weight: 500;
+}
 
 .restaurants {
   display: flex;
