@@ -187,17 +187,19 @@ header {
           position: absolute;
           &:hover {
             opacity: 0;
-            transition: opacity 700ms;
+            transition: opacity 500ms;
           }
         }
         .full-heart {
           font-size: 1.05rem;
           position: absolute;
           opacity: 0;
-          transition: opacity 700ms;
+          transition: opacity 500ms;
           &:hover {
             opacity: 1;
-            color: linear-gradient(0deg, $secondary-color 0%, $primary-color 100%); 
+            background: linear-gradient(0deg, $secondary-color 0%, $primary-color 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
         }
       }
