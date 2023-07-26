@@ -96,18 +96,31 @@ header {
 }
 
 .fonctionnement {
-  padding: 48px 20px;
+  padding: 50px 20px;
+  @media (min-width: 1024px) {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  .liste-etapes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 12.5px;
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 25px;
+    }
+  }
   h1 {
     margin-bottom: 30px;
   }
-  .etapes {
+  .etape {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     position: relative;
     padding-left: 34.5px;
-    margin-left: 12.5px;
-    margin-bottom: 25px;
     gap: 27px;
     height: 72.4px;
     max-width: 100%;
@@ -161,9 +174,6 @@ header {
     position: relative;
     border-radius: 15px;
     background-color: #ffffff;
-    @media (min-width: 1024px) {
-      max-width: 490px;
-    } 
     a {
       text-decoration: none;
       color: #000;
