@@ -136,16 +136,41 @@ header .location i {
   padding: 60px 20px;
   background: #f6f6f6;
 }
-.restaurants .card-restaurant {
+@media (min-width: 1024px) {
+  .restaurants {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+.restaurants .cards-restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+@media (min-width: 1024px) {
+  .restaurants .cards-restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+    row-gap: 50px;
+  }
+}
+.restaurants .card {
   position: relative;
   border-radius: 15px;
   background-color: #ffffff;
 }
-.restaurants .card-restaurant a {
+@media (min-width: 1024px) {
+  .restaurants .card {
+    max-width: 490px;
+  }
+}
+.restaurants .card a {
   text-decoration: none;
   color: #000;
 }
-.restaurants .card-restaurant a img {
+.restaurants .card a img {
   width: 100%;
   height: 174px;
   -o-object-fit: cover;
@@ -153,25 +178,25 @@ header .location i {
   border-radius: 15px 15px 0 0;
   margin-bottom: 19px;
 }
-.restaurants .card-restaurant a div {
+.restaurants .card a div {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding-left: 13px;
   padding-right: 13px;
 }
-.restaurants .card-restaurant a .card-content {
+.restaurants .card a .card-content {
   flex-direction: column;
   padding: 0;
 }
-.restaurants .card-restaurant a .card-content p {
+.restaurants .card a .card-content p {
   font-size: 17px;
   font-weight: 300;
   color: #000;
   margin-top: 5px;
   margin-bottom: 12px;
 }
-.restaurants .card-restaurant a .btn-like {
+.restaurants .card a .btn-like {
   display: flex;
   align-items: center;
   border: none;
@@ -180,21 +205,21 @@ header .location i {
   padding: 0;
   position: relative;
 }
-.restaurants .card-restaurant a .btn-like .empty-heart {
+.restaurants .card a .btn-like .empty-heart {
   font-size: 1.05rem;
   position: absolute;
 }
-.restaurants .card-restaurant a .btn-like .empty-heart:hover {
+.restaurants .card a .btn-like .empty-heart:hover {
   opacity: 0;
   transition: opacity 500ms;
 }
-.restaurants .card-restaurant a .btn-like .full-heart {
+.restaurants .card a .btn-like .full-heart {
   font-size: 1.05rem;
   position: absolute;
   opacity: 0;
   transition: opacity 500ms;
 }
-.restaurants .card-restaurant a .btn-like .full-heart:hover {
+.restaurants .card a .btn-like .full-heart:hover {
   opacity: 1;
   background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;

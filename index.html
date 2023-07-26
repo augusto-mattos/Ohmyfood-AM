@@ -54,15 +54,39 @@
 
         <section class="restaurants">
             <h1>Restaurants</h1>
-            <div class="card-restaurant">
-                <a href="#">
-                    <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt="Image d'un plat servi au restaurant La Palette du Goût'">
-                    <div>
-                        <div class="card-content">
-                            <h2>La palette du goût</h2>
-                            <p>Ménilmontant</p>
+            <div class="cards-restaurants">
+                <div class="card">
+                    <a href="#">
+                        <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                            alt="Image d'un plat servi au restaurant La Palette du Goût'">
+                        <div>
+                            <div class="card-content">
+                                <h2>La palette du goût</h2>
+                                <p>Ménilmontant</p>
+                            </div>
+                                <button class="btn-like">
+                                    <span class="empty-heart">
+                                        <i class="fa-regular fa-heart fa-lg"></i>
+                                    </span>
+                                    <span class="full-heart">
+                                        <i class="fa-solid fa-heart fa-lg"></i>
+                                    </span>
+                                </button>
+                                <!-- Au clic, il devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic -->
+                                <!-- la version light de l'icone heart n'est pas disponible en mode free sur fontawesome -->
                         </div>
+                        <p class="tag-nouveau">Nouveau</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                            alt="Image d'un plat servi au restaurant La Note Enchantée">
+                        <div>
+                            <div class="card-content">
+                                <h2>La note enchantée</h2>
+                                <p>Charonne</p>
+                            </div>
                             <button class="btn-like">
                                 <span class="empty-heart">
                                     <i class="fa-regular fa-heart fa-lg"></i>
@@ -71,72 +95,50 @@
                                     <i class="fa-solid fa-heart fa-lg"></i>
                                 </span>
                             </button>
-                            <!-- Au clic, il devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic -->
-                            <!-- la version light de l'icone heart n'est pas disponible en mode free sur fontawesome -->
-                    </div>
-                    <p class="tag-nouveau">Nouveau</p>
-                </a>
-            </div>
-            <div class="card-restaurant">
-                <a href="#">
-                    <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                        alt="Image d'un plat servi au restaurant La Note Enchantée">
-                    <div>
-                        <div class="card-content">
-                            <h2>La note enchantée</h2>
-                            <p>Charonne</p>
                         </div>
-                        <button class="btn-like">
-                            <span class="empty-heart">
-                                <i class="fa-regular fa-heart fa-lg"></i>
-                            </span>
-                            <span class="full-heart">
-                                <i class="fa-solid fa-heart fa-lg"></i>
-                            </span>
-                        </button>
-                    </div>
-                    <p class="tag-nouveau">Nouveau</p>
-                </a>
-            </div>
-            <div class="card-restaurant">
-                <a href="#">
-                    <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                        alt="Image d'un plat servi au restaurant À la française">
-                    <div>
-                        <div class="card-content">
-                            <h2>À la française</h2>
-                            <p>Cité Rouge</p>
+                        <p class="tag-nouveau">Nouveau</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt="Image d'un plat servi au restaurant À la française">
+                        <div>
+                            <div class="card-content">
+                                <h2>À la française</h2>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <button class="btn-like">
+                                <span class="empty-heart">
+                                    <i class="fa-regular fa-heart fa-lg"></i>
+                                </span>
+                                <span class="full-heart">
+                                    <i class="fa-solid fa-heart fa-lg"></i>
+                                </span>
+                            </button>
                         </div>
-                        <button class="btn-like">
-                            <span class="empty-heart">
-                                <i class="fa-regular fa-heart fa-lg"></i>
-                            </span>
-                            <span class="full-heart">
-                                <i class="fa-solid fa-heart fa-lg"></i>
-                            </span>
-                        </button>
-                    </div>
-                </a>
-            </div>
-            <div class="card-restaurant">
-                <a href="#">
-                    <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                        alt="Image d'un plat servi au restaurant La délice de sens">
-                    <div>
-                        <div class="card-content">
-                            <h2>La délice de sens</h2>
-                            <p>Folie-Méricourt</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt="Image d'un plat servi au restaurant La délice de sens">
+                        <div>
+                            <div class="card-content">
+                                <h2>La délice de sens</h2>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <button class="btn-like">
+                                <span class="empty-heart">
+                                    <i class="fa-regular fa-heart fa-lg"></i>
+                                </span>
+                                <span class="full-heart">
+                                    <i class="fa-solid fa-heart fa-lg"></i>
+                                </span>
+                            </button>
                         </div>
-                        <button class="btn-like">
-                            <span class="empty-heart">
-                                <i class="fa-regular fa-heart fa-lg"></i>
-                            </span>
-                            <span class="full-heart">
-                                <i class="fa-solid fa-heart fa-lg"></i>
-                            </span>
-                        </button>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
