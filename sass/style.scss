@@ -14,7 +14,7 @@ body {
 }
 
 .btn-primary {
-  padding: 13px 16px;
+  padding: 13px 18.75px;
   background: linear-gradient(175deg, $secondary-color 0%, $primary-color 100%);
   border: none;
   border-radius: 25px;
@@ -257,24 +257,47 @@ footer {
   .footer-content {
     display: flex;
     flex-direction: column;
-    gap: 7px;
-    color: #ffffff;
+    @media (min-width: 1024px) {
+      flex-direction: row-reverse;
+      align-items: end;
+      gap: 16px;
+    }
     h2 {
       font-family: Shrikhand;
       font-weight: 400;
-      margin-bottom: 9px;
-    }
-    a {
-      text-decoration: none;
       color: #ffffff;
-      font-size: 16px;
-      margin: 0;
-      &:hover {
-        cursor: pointer;
+      margin-bottom: 16px;
+      @media (min-width: 1024px) {
+        margin-bottom: 0;
+        margin-top: 27px;
       }
-      i {
-        width: 11px;
-        margin-right: 15px;
+    }
+    .liens-footer {
+      display: flex;
+      gap: 7px;
+      flex-direction: column;
+      @media (min-width: 1024px) {
+        flex-direction: row;
+      }
+      .footer-icons, .footer-info {
+        display: flex;
+        gap: 11px;
+        flex-direction: column;
+        @media (min-width: 1024px) {
+          flex-direction: row;
+          margin-right: 37px;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        &:hover {
+          cursor: pointer;
+        }
+        i {
+          width: 11px;
+          margin-right: 15px;
+        }
       }
     }
   }
