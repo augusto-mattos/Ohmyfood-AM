@@ -142,10 +142,28 @@ header {
   gap: 18px;
   padding: 60px 20px;
   background: $grey-3;
-  .card-restaurant {
+  @media (min-width: 1024px) {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  .cards-restaurants {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 100px;
+      row-gap: 50px;
+    }
+  }
+  .card {
     position: relative;
     border-radius: 15px;
     background-color: #ffffff;
+    @media (min-width: 1024px) {
+      max-width: 490px;
+    } 
     a {
       text-decoration: none;
       color: #000;
