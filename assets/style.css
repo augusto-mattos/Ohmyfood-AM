@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -52,6 +53,7 @@ header .location i {
   height: 16px;
 }
 
+/* élément header pour les pages des restaurants*/
 .header-pages {
   display: flex;
   flex-direction: row;
