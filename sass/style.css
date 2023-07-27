@@ -225,20 +225,19 @@ header .location i {
 }
 .restaurants .card a .btn-like .empty-heart:hover {
   opacity: 0;
-  transition: opacity 500ms;
 }
 .restaurants .card a .btn-like .full-heart {
   font-size: 1.05rem;
   position: absolute;
-  opacity: 0;
-  transition: opacity 500ms;
-}
-.restaurants .card a .btn-like .full-heart:hover {
-  opacity: 1;
   background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+.restaurants .card a .btn-like .full-heart:hover {
+  opacity: 1;
 }
 .restaurants .tag-nouveau {
   display: flex;

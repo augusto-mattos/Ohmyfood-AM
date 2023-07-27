@@ -216,23 +216,22 @@ header {
           position: absolute;
           &:hover {
             opacity: 0;
-            transition: opacity 500ms;
           }
         }
         .full-heart {
           font-size: 1.05rem;
           position: absolute;
+          background: linear-gradient(
+            0deg,
+            $secondary-color 0%,
+            $primary-color 100%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
           opacity: 0;
-          transition: opacity 500ms;
+          transition: opacity 250ms ease-in-out;
           &:hover {
             opacity: 1;
-            background: linear-gradient(
-              0deg,
-              $secondary-color 0%,
-              $primary-color 100%
-            );
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
           }
         }
       }
