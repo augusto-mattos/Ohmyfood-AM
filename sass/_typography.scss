@@ -16,6 +16,31 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 40px;
+    height: 6px;
+    background-color: $tertiary-color;
+  }
+}
+
+h4 {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 p {
   font-size: 16px;
   font-weight: 500;

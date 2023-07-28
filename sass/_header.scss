@@ -3,7 +3,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  img {
+  .logo {
     max-width: 375px;
     max-height: 63px;
     margin: 23px 89px 13px 89px;
@@ -43,7 +43,7 @@ header {
     color: $grey-1;
     margin-left: 17px;
   }
-  img {
+  .logo {
     max-width: 375px;
     max-height: 63px;
     margin: 23px 89px 13px 0;
