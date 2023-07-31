@@ -304,7 +304,6 @@ header .location i {
 .menu-restaurant {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 40px;
   background-color: #f6f6f6;
   padding-top: 32px;
@@ -365,9 +364,6 @@ header .location i {
   font-size: 15.043px;
   font-weight: 700;
 }
-.menu-restaurant .btn-primary {
-  max-width: 186px;
-}
 
 footer {
   display: flex;
@@ -427,7 +423,7 @@ footer .footer-content a i {
   margin-right: 15px;
 }
 
-.btn-primary {
+.btn-explorer {
   display: flex;
   justify-content: center;
   padding: 13px 18.75px;
@@ -441,7 +437,7 @@ footer .footer-content a i {
   text-decoration: none;
   transition: 300ms ease-out;
 }
-.btn-primary:hover {
+.btn-explorer:hover {
   opacity: 0.8;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
@@ -474,6 +470,27 @@ footer .footer-content a i {
 }
 .btn-like .full-heart:hover {
   opacity: 1;
+}
+
+.btn-commander {
+  display: flex;
+  justify-content: center;
+  padding: 13px 18.75px;
+  background: linear-gradient(175deg, #ff79da 0%, #9356dc 100%);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 300ms ease-out;
+  width: 186px;
+  align-self: center;
+}
+.btn-commander:hover {
+  opacity: 0.8;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
 /*# sourceMappingURL=style.css.map */
