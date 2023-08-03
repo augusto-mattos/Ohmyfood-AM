@@ -23,44 +23,120 @@
       font-weight: 400;
     }
   }
-  .menu-options {
+  .entree-options {
+    animation: fadein 1s;
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.plat-options {
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dessert-options {
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+form {
+  display: flex;
+  gap: 17px;
+  flex-direction: column;
+  .card-option {
     display: flex;
-    gap: 17px;
-    flex-direction: column;
-    .card-option {
+    justify-content: space-between;
+    border: none;
+    padding: 0;
+    height: 69px;
+    width: 100%;
+    background-color: #ffffff;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px
+      rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    .plats {
       display: flex;
-      justify-content: space-between;
-      height: 69px;
-      width: 100%;
-      background-color: #ffffff;
-      align-items: center;
-      border-radius: 15px;
-      box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px
-        rgba(0, 0, 0, 0.1);
-      .plats {
-        display: flex;
-        flex-direction: column;
-        margin-top: 15px;
-        margin-left: 15px;
-        margin-bottom: 15px;
-        gap: 5px;
-        p {
-          overflow: hidden;
-          color: #000;
-          text-overflow: ellipsis;
-          font-size: 15.043px;
-          font-weight: 300;
-          margin: 0;
-        }
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-bottom: 15px;
+      gap: 5px;
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 15.043px;
+        font-weight: 300;
+        margin: 0;
       }
+    }
+    .price-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      transform: translateX(70px);
+      transition: transform 0.5s ease;
+      /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : CE HOVER EST ICI SUR LE .price-checkbox DE FAÇON TEMPORAIRE */
+      &:hover {
+        transform: translateX(0);
+      }
+      /* input[type="checkbox"] {
+          width: 0;
+          &:checked {
+            transform: translateX(0);
+          }
+          &:not(:checked) {
+            transform: translateX(70px);
+          }
+        }  */
       .price {
-        margin-top: 15px;
-        margin-right: 15px;
-        margin-bottom: 15px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        margin-left: 15px;
         color: $grey-1;
-        text-align: center;
         font-size: 15.043px;
         font-weight: 700;
+      }
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 69px;
+        height: 69px;
+        color: white;
+        background: $tertiary-color;
+        border-radius: 0 15px 15px 0;
+        input[type="checkbox"] {
+          width: 0;
+          &:checked {
+            transform: translateX(0);
+          }
+        }
       }
     }
   }
