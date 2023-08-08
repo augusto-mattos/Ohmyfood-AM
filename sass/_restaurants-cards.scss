@@ -51,39 +51,6 @@
           margin-bottom: 12px;
         }
       }
-      /* .btn-like {
-        display: flex;
-        align-items: center;
-        border: none;
-        margin-right: 35px;
-        background: none;
-        padding: 0;
-        position: relative;
-        .empty-heart {
-          font-size: 1.05rem;
-          position: absolute;
-          &:hover {
-            opacity: 0;
-          }
-        }
-        .full-heart {
-          font-size: 1.05rem;
-          position: absolute;
-          background: linear-gradient(
-            0deg,
-            $secondary-color 0%,
-            $primary-color 100%
-          );
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          opacity: 0;
-          transition: opacity 250ms ease-in-out;
-          &:hover {
-            opacity: 1;
-          }
-        }
-      } */
     }
   }
   .tag-nouveau {

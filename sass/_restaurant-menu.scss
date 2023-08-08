@@ -1,17 +1,26 @@
 .main-restaurant {
   background: $grey-3;
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+}
 }
 .menu-restaurant {
   display: flex;
   flex-direction: column;
   gap: 40px;
   background-color: $grey-3;
-  padding-top: 32px;
-  padding-right: 17px;
-  padding-left: 17px;
+  padding: 32px 17px 32px 17px;
   border-radius: 20px 20px 0 0;
-  top: -40px;
+  margin-top: -40px;
   position: relative;
+  @media (min-width: 1024px) {
+    width: 100%;
+    max-width: 1055px;
+    align-items: center;
+}
   .menu-title {
     display: flex;
     justify-content: left;
@@ -23,6 +32,15 @@
       font-weight: 400;
     }
   }
+
+  .entree-options,
+.plat-options,
+.dessert-options {
+    @media (min-width: 1024px) {
+      	width: 100%;
+	max-width: 634px;
+    }
+}
   .entree-options {
     animation: fadein 1s;
   }
@@ -39,25 +57,9 @@
 .plat-options {
   animation: fadein 2s;
 }
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 .dessert-options {
   animation: fadein 3s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 form {
@@ -100,19 +102,22 @@ form {
       gap: 15px;
       transform: translateX(70px);
       transition: transform 0.5s ease;
-      /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : CE HOVER EST ICI SUR LE .price-checkbox DE FAÇON TEMPORAIRE */
+      /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : CE HOVER EST ICI SUR LE .price-checkbox DE FAÇON TEMPORAIRE 
+      */
       &:hover {
         transform: translateX(0);
       }
-      /* input[type="checkbox"] {
-          width: 0;
+      input[type="checkbox"] {
+        width: 0;
+        /* 
           &:checked {
             transform: translateX(0);
           }
           &:not(:checked) {
-            transform: translateX(70px);
-          }
-        }  */
+            transform: translateX(70px); 
+          } 
+        */
+      }
       .price {
         display: flex;
         justify-content: flex-end;
@@ -131,12 +136,6 @@ form {
         color: white;
         background: $tertiary-color;
         border-radius: 0 15px 15px 0;
-        input[type="checkbox"] {
-          width: 0;
-          &:checked {
-            transform: translateX(0);
-          }
-        }
       }
     }
   }
