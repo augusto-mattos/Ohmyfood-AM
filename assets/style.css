@@ -123,9 +123,16 @@ header .location i {
 
 .hero-restaurant {
   display: flex;
+  width: 100vw;
 }
 .hero-restaurant img {
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .hero-restaurant img {
+    max-height: 383px;
+    object-fit: cover;
+  }
 }
 
 .fonctionnement {
@@ -221,39 +228,6 @@ header .location i {
 .restaurants .card a {
   text-decoration: none;
   color: #000;
-  /* .btn-like {
-    display: flex;
-    align-items: center;
-    border: none;
-    margin-right: 35px;
-    background: none;
-    padding: 0;
-    position: relative;
-    .empty-heart {
-      font-size: 1.05rem;
-      position: absolute;
-      &:hover {
-        opacity: 0;
-      }
-    }
-    .full-heart {
-      font-size: 1.05rem;
-      position: absolute;
-      background: linear-gradient(
-        0deg,
-        $secondary-color 0%,
-        $primary-color 100%
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      opacity: 0;
-      transition: opacity 250ms ease-in-out;
-      &:hover {
-        opacity: 1;
-      }
-    }
-  } */
 }
 .restaurants .card a img {
   width: 100%;
@@ -300,18 +274,31 @@ header .location i {
 .main-restaurant {
   background: #f6f6f6;
 }
+@media (min-width: 1024px) {
+  .main-restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+  }
+}
 
 .menu-restaurant {
   display: flex;
   flex-direction: column;
   gap: 40px;
   background-color: #f6f6f6;
-  padding-top: 32px;
-  padding-right: 17px;
-  padding-left: 17px;
+  padding: 32px 17px 32px 17px;
   border-radius: 20px 20px 0 0;
-  top: -40px;
+  margin-top: -40px;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .menu-restaurant {
+    width: 100%;
+    max-width: 1055px;
+    align-items: center;
+  }
 }
 .menu-restaurant .menu-title {
   display: flex;
@@ -323,6 +310,14 @@ header .location i {
   font-family: Shrikhand;
   font-size: 28px;
   font-weight: 400;
+}
+@media (min-width: 1024px) {
+  .menu-restaurant .entree-options,
+  .menu-restaurant .plat-options,
+  .menu-restaurant .dessert-options {
+    width: 100%;
+    max-width: 634px;
+  }
 }
 .menu-restaurant .entree-options {
   animation: fadein 1s;
@@ -340,26 +335,10 @@ header .location i {
   animation: fadein 2s;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .dessert-options {
   animation: fadein 3s;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 form {
   display: flex;
   gap: 17px;
@@ -401,19 +380,22 @@ form .card-option .price-checkbox {
   gap: 15px;
   transform: translateX(70px);
   transition: transform 0.5s ease;
-  /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : CE HOVER EST ICI SUR LE .price-checkbox DE FAÇON TEMPORAIRE */
-  /* input[type="checkbox"] {
-    width: 0;
+  /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : CE HOVER EST ICI SUR LE .price-checkbox DE FAÇON TEMPORAIRE 
+  */
+}
+form .card-option .price-checkbox:hover {
+  transform: translateX(0);
+}
+form .card-option .price-checkbox input[type=checkbox] {
+  width: 0;
+  /* 
     &:checked {
       transform: translateX(0);
     }
     &:not(:checked) {
-      transform: translateX(70px);
-    }
-  }  */
-}
-form .card-option .price-checkbox:hover {
-  transform: translateX(0);
+      transform: translateX(70px); 
+    } 
+  */
 }
 form .card-option .price-checkbox .price {
   display: flex;
@@ -433,12 +415,6 @@ form .card-option .price-checkbox .icon {
   color: white;
   background: #99e2d0;
   border-radius: 0 15px 15px 0;
-}
-form .card-option .price-checkbox .icon input[type=checkbox] {
-  width: 0;
-}
-form .card-option .price-checkbox .icon input[type=checkbox]:checked {
-  transform: translateX(0);
 }
 
 footer {
