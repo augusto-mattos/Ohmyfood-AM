@@ -357,6 +357,10 @@ form .card-option {
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : CE HOVER EST ICI SUR LE .price-checkbox DE FAÇON TEMPORAIRE */
+}
+form .card-option:hover .price-checkbox {
+  transform: translateX(0);
 }
 form .card-option .plats {
   display: flex;
@@ -380,11 +384,6 @@ form .card-option .price-checkbox {
   gap: 15px;
   transform: translateX(70px);
   transition: transform 0.5s ease;
-  /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : CE HOVER EST ICI SUR LE .price-checkbox DE FAÇON TEMPORAIRE 
-  */
-}
-form .card-option .price-checkbox:hover {
-  transform: translateX(0);
 }
 form .card-option .price-checkbox input[type=checkbox] {
   width: 0;
