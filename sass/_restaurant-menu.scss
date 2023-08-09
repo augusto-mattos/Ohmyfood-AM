@@ -80,6 +80,10 @@ form {
       rgba(0, 0, 0, 0.1);
     overflow: hidden;
     cursor: pointer;
+    /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : CE HOVER EST ICI SUR LE .price-checkbox DE FAÇON TEMPORAIRE */
+    &:hover .price-checkbox {
+      transform: translateX(0);
+    }
     .plats {
       display: flex;
       flex-direction: column;
@@ -102,11 +106,6 @@ form {
       gap: 15px;
       transform: translateX(70px);
       transition: transform 0.5s ease;
-      /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : CE HOVER EST ICI SUR LE .price-checkbox DE FAÇON TEMPORAIRE 
-      */
-      &:hover {
-        transform: translateX(0);
-      }
       input[type="checkbox"] {
         width: 0;
         /* 
