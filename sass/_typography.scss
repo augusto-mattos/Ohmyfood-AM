@@ -35,10 +35,9 @@ h3 {
 
 h4 {
   margin: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
   font-size: 1.125rem;
   font-weight: 500;
+  @include ellipsis;
 }
 
 p {
