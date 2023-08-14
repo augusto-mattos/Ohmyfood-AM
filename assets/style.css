@@ -375,6 +375,7 @@ form .card-option .plats {
   gap: 5px;
   overflow: hidden;
   white-space: nowrap;
+  width: calc(125% - 140px);
 }
 form .card-option .plats p {
   font-size: 0.94rem;
