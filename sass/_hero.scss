@@ -19,9 +19,8 @@
 
 .hero-restaurant {
   display: flex;
-  width: 100vw;
   img {
-    width: 100%;
+    width: 100vw;
     max-height: 275px;
     object-fit: cover;
     @media (min-width: 1024px) {
