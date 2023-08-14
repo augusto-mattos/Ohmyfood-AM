@@ -12,13 +12,13 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   margin: 0;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
   position: relative;
@@ -38,12 +38,12 @@ h4 {
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   color: #353535;
 }
@@ -115,7 +115,7 @@ header .location i {
   background: #f6f6f6;
 }
 .hero p {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   margin-top: 18px;
   margin-bottom: 27px;
@@ -192,7 +192,7 @@ header .location i {
   align-items: center;
   background: #9356dc;
   color: #ffffff;
-  font-size: 14.182px;
+  font-size: 0.88rem;
 }
 
 .restaurants {
@@ -249,7 +249,7 @@ header .location i {
   padding: 0;
 }
 .restaurants .card a .card-content p {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 300;
   color: #000;
   margin-top: 5px;
@@ -309,7 +309,7 @@ header .location i {
 .menu-restaurant .menu-title h1 {
   color: #101010;
   font-family: Shrikhand;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
 }
 @media (min-width: 1024px) {
@@ -375,7 +375,7 @@ form .card-option .plats {
 form .card-option .plats p {
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 15.043px;
+  font-size: 0.94rem;
   font-weight: 300;
   margin: 0;
 }
@@ -403,7 +403,7 @@ form .card-option .price-checkbox .price {
   margin-top: 30px;
   margin-left: 15px;
   color: #353535;
-  font-size: 15.043px;
+  font-size: 0.94rem;
   font-weight: 700;
 }
 form .card-option .price-checkbox .icon {
@@ -483,7 +483,7 @@ footer .footer-content a i {
   border: none;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   color: #ffffff;
   text-decoration: none;
@@ -532,7 +532,7 @@ footer .footer-content a i {
   border: none;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   color: #ffffff;
   text-decoration: none;

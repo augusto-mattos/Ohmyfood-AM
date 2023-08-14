@@ -11,13 +11,13 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   margin: 0;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
   position: relative;
@@ -37,12 +37,12 @@ h4 {
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   color: $grey-1;
 }
