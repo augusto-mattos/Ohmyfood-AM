@@ -36,10 +36,12 @@ h3::after {
 
 h4 {
   margin: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
   font-size: 1.125rem;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(125% - 50px);
+  overflow: hidden;
 }
 
 p {
@@ -371,13 +373,17 @@ form .card-option .plats {
   margin-left: 15px;
   margin-bottom: 15px;
   gap: 5px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 form .card-option .plats p {
-  overflow: hidden;
-  text-overflow: ellipsis;
   font-size: 0.94rem;
   font-weight: 300;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(125% - 50px);
+  overflow: hidden;
 }
 form .card-option .price-checkbox {
   display: flex;

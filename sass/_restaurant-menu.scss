@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     background: #ffffff;
-}
+  }
 }
 .menu-restaurant {
   display: flex;
@@ -20,7 +20,7 @@
     width: 100%;
     max-width: 1055px;
     align-items: center;
-}
+  }
   .menu-title {
     display: flex;
     justify-content: left;
@@ -34,13 +34,13 @@
   }
 
   .entree-options,
-.plat-options,
-.dessert-options {
+  .plat-options,
+  .dessert-options {
     @media (min-width: 1024px) {
-      	width: 100%;
-	max-width: 634px;
+      width: 100%;
+      max-width: 634px;
     }
-}
+  }
   .entree-options {
     animation: fadein 1s;
   }
@@ -92,12 +92,13 @@ form {
       margin-left: 15px;
       margin-bottom: 15px;
       gap: 5px;
+      overflow: hidden;
+      white-space: nowrap;
       p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: .94rem;
+        font-size: 0.94rem;
         font-weight: 300;
         margin: 0;
+        @include ellipsis;
       }
     }
     .price-checkbox {
@@ -123,7 +124,7 @@ form {
         margin-top: 30px;
         margin-left: 15px;
         color: $grey-1;
-        font-size: .94rem;
+        font-size: 0.94rem;
         font-weight: 700;
       }
       .icon {
