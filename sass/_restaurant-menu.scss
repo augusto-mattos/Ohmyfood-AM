@@ -33,39 +33,42 @@
     }
   }
 
-  .entree-options,
-  .plat-options,
-  .dessert-options {
-    @media (min-width: 1024px) {
-      width: 100%;
-      max-width: 634px;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    label {
+      cursor: pointer;
+    }
+    .entree-options,
+    .plat-options,
+    .dessert-options {
+      display: flex;
+      gap: 17px;
+      flex-direction: column;
+      @media (min-width: 1024px) {
+        width: 634px;
+      }
+    }
+    .entree-options {
+      animation: fadein 1s;
+    }
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .plat-options {
+      animation: fadein 2s;
+    }
+    .dessert-options {
+      animation: fadein 3s;
     }
   }
-  .entree-options {
-    animation: fadein 1s;
-  }
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-}
 
-.plat-options {
-  animation: fadein 2s;
-}
-
-.dessert-options {
-  animation: fadein 3s;
-}
-
-form {
-  display: flex;
-  gap: 17px;
-  flex-direction: column;
   .card-option {
     display: flex;
     justify-content: space-between;

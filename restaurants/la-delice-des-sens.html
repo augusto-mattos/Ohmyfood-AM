@@ -42,170 +42,195 @@
                         </span>
                     </button>
                 </div>
-
-                <form class="entree-options">
-                    <h3>Entrées</h3>
-                    <div class="card-option">
-                        <div class="plats">
-                            <h4>Tartare de thon</h4>
-                            <p>Assaisonné au yuzu</p>
-                        </div>
-                        <div class="price-checkbox">
-                            <div class="price">
-                                <span>25€</span>
+                <form method="post">
+                    <div class="entree-options">
+                        <h3>Entrées</h3>
+                        <div class="card-option">
+                            <div class="plats">
+                                <h4>
+                                    <label for="entree1">
+                                        Tartare de thon
+                                    </label>
+                                </h4>
+                                <p>Assaisonné au yuzu</p>
                             </div>
-                            <div class="icon">
-                                <input type="checkbox" id="entree1">
-                                <i class="fas fa-circle-check"></i>
+                            <div class="price-checkbox">
+                                <div class="price">
+                                    <span>25€</span>
+                                </div>
+                                <div class="icon">
+                                    <input type="checkbox" id="entree1" name="entree1">
+                                    <i class="fas fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-option">
+                            <div class="plats">
+                                <h4>
+                                    <label for="entree2">
+                                        Bouchée de homard croustillant
+                                    </label>
+                                </h4>
+                                <p>Et sa farandole de petits légumes</p>
+                            </div>
+                            <div class="price-checkbox">
+                                <div class="price">
+                                    <span>35€</span>
+                                </div>
+                                <div class="icon">
+                                    <input type="checkbox" id="entree2" name="entree2">
+                                    <i class="fas fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-option">
+                            <div class="plats">
+                                <h4>
+                                    <label for="entree3">
+                                        Velouté de cèpes
+                                    </label>
+                                </h4>
+                                <p>Aux truffes</p>
+                            </div>
+                            <div class="price-checkbox">
+                                <div class="price">
+                                    <span>20€</span>
+                                </div>
+                                <div class="icon">
+                                    <input type="checkbox" id="entree3" name="entree3">
+                                    <i class="fas fa-circle-check"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card-option">
-                        <div class="plats">
-                            <h4>Bouchée de homard croustillant</h4>
-                            <p>Et sa farandole de petits légumes</p>
-                        </div>
-                        <div class="price-checkbox">
-                            <div class="price">
-                                <span>35€</span>
+                    <div class="plat-options">
+                        <h3>Plats</h3>
+                        <div class="card-option">
+                            <div class="plats">
+                                <h4>
+                                    <label for="plat1"></label>
+                                    Poulet rôti aux herbes de Provence
+                                </h4>
+                                <p>Et sa crème de truffe</p>
                             </div>
-                            <div class="icon">
-                                <input type="checkbox" id="entree2">
-                                <i class="fas fa-circle-check"></i>
+                            <div class="price-checkbox">
+                                <div class="price">
+                                    <span>40€</span>
+                                </div>
+                                <div class="icon">
+                                    <input type="checkbox" id="plat1" name="plat1">
+                                    <i class="fas fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-option">
+                            <div class="plats">
+                                <h4>
+                                    <label for="plat2">
+                                        Langouste rôtie
+                                    </label>
+                                </h4>
+                                <p>Et ses légumes de saison</p>
+                            </div>
+                            <div class="price-checkbox">
+                                <div class="price">
+                                    <span>35€</span>
+                                </div>
+                                <div class="icon">
+                                    <input type="checkbox" id="plat2" name="plat2">
+                                    <i class="fas fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-option">
+                            <div class="plats">
+                                <h4>
+                                    <label for="plat3">
+                                        Côte de bœuf Angus
+                                    </label>
+                                </h4>
+                                <p>Et sa purée de panais</p>
+                            </div>
+                            <div class="price-checkbox">
+                                <div class="price">
+                                    <span>44€</span>
+                                </div>
+                                <div class="icon">
+                                    <input type="checkbox" id="plat3" name="plat3">
+                                    <i class="fas fa-circle-check"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card-option">
-                        <div class="plats">
-                            <h4>Velouté de cèpes</h4>
-                            <p>Aux truffes</p>
-                        </div>
-                        <div class="price-checkbox">
-                            <div class="price">
-                                <span>20€</span>
+                    <div class="dessert-options">
+                        <h3>Desserts</h3>
+                        <div class="card-option">
+                            <div class="plats">
+                                <h4>
+                                    <label for="dessert1">
+                                        Farandole de desserts
+                                    </label>
+                                </h4>
+                                <p>Du chef</p>
                             </div>
-                            <div class="icon">
-                                <input type="checkbox" id="entree3">
-                                <i class="fas fa-circle-check"></i>
+                            <div class="price-checkbox">
+                                <div class="price">
+                                    <span>18€</span>
+                                </div>
+                                <div class="icon">
+                                    <input type="checkbox" id="dessert1" name="dessert1">
+                                    <i class="fas fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-option">
+                            <div class="plats">
+                                <h4>
+                                    <label for="dessert2">
+                                        Crème brulée
+                                    </label>
+                                </h4>
+                                <p>Revisitée</p>
+                            </div>
+                            <div class="price-checkbox">
+                                <div class="price">
+                                    <span>22€</span>
+                                </div>
+                                <div class="icon">
+                                    <input type="checkbox" id="dessert2" name="dessert2">
+                                    <i class="fas fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-option">
+                            <div class="plats">
+                                <h4>
+                                    <label for="dessert3">
+                                        Tiramisu
+                                    </label>
+                                </h4>
+                                <p>À la noisette</p>
+                            </div>
+                            <div class="price-checkbox">
+                                <div class="price">
+                                    <span>23€</span>
+                                </div>
+                                <div class="icon">
+                                    <input type="checkbox" id="dessert3" name="dessert3">
+                                    <i class="fas fa-circle-check"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
-
+                    <button class="btn-commander">Commander</button>
                 </form>
-
-                <form class="plat-options">
-                    <h3>Plats</h3>
-
-                    <div class="card-option">
-                        <div class="plats">
-                            <h4>Poulet rôti aux herbes de Provence</h4>
-                            <p>Et sa crème de truffe</p>
-                        </div>
-                        <div class="price-checkbox">
-                            <div class="price">
-                                <span>40€</span>
-                            </div>
-                            <div class="icon">
-                                <input type="checkbox" id="plat1">
-                                <i class="fas fa-circle-check"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-option">
-                        <div class="plats">
-                            <h4>Langouste rôtie</h4>
-                            <p>Et ses légumes de saison</p>
-                        </div>
-                        <div class="price-checkbox">
-                            <div class="price">
-                                <span>35€</span>
-                            </div>
-                            <div class="icon">
-                                <input type="checkbox" id="plat2">
-                                <i class="fas fa-circle-check"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-option">
-                        <div class="plats">
-                            <h4>Côte de bœuf Angus</h4>
-                            <p>Et sa purée de panais</p>
-                        </div>
-                        <div class="price-checkbox">
-                            <div class="price">
-                                <span>44€</span>
-                            </div>
-                            <div class="icon">
-                                <input type="checkbox" id="plat3">
-                                <i class="fas fa-circle-check"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                </form>
-                <form class="dessert-options">
-                    <h3>Desserts</h3>
-
-                    <div class="card-option">
-                        <div class="plats">
-                            <h4>Farandole de desserts</h4>
-                            <p>Du chef</p>
-                        </div>
-                        <div class="price-checkbox">
-                            <div class="price">
-                                <span>18€</span>
-                            </div>
-                            <div class="icon">
-                                <input type="checkbox" id="dessert1">
-                                <i class="fas fa-circle-check"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-option">
-                        <div class="plats">
-                            <h4>Crème brulée</h4>
-                            <p>Revisitée</p>
-                        </div>
-                        <div class="price-checkbox">
-                            <div class="price">
-                                <span>22€</span>
-                            </div>
-                            <div class="icon">
-                                <input type="checkbox">
-                                <i class="fas fa-circle-check"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-option">
-                        <div class="plats">
-                            <h4>Tiramisu</h4>
-                            <p>À la noisette</p>
-                        </div>
-                        <div class="price-checkbox">
-                            <div class="price">
-                                <span>23€</span>
-                            </div>
-                            <div class="icon">
-                                <input type="checkbox">
-                                <i class="fas fa-circle-check"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                </form>
-                <button class="btn-commander" href="#">Commander</button>
             </div>
         </section>
     </main>
 
     <footer>
-
         <div>
             <h2>OhMyFood</h2>
         </div>

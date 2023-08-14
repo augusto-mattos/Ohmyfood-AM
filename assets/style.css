@@ -22,7 +22,7 @@ h3 {
   font-weight: 300;
   text-transform: uppercase;
   position: relative;
-  margin-top: 0;
+  margin-top: 23;
 }
 h3::after {
   content: "";
@@ -313,15 +313,29 @@ header .location i {
   font-size: 1.75rem;
   font-weight: 400;
 }
+.menu-restaurant form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.menu-restaurant form label {
+  cursor: pointer;
+}
+.menu-restaurant form .entree-options,
+.menu-restaurant form .plat-options,
+.menu-restaurant form .dessert-options {
+  display: flex;
+  gap: 17px;
+  flex-direction: column;
+}
 @media (min-width: 1024px) {
-  .menu-restaurant .entree-options,
-  .menu-restaurant .plat-options,
-  .menu-restaurant .dessert-options {
-    width: 100%;
-    max-width: 634px;
+  .menu-restaurant form .entree-options,
+  .menu-restaurant form .plat-options,
+  .menu-restaurant form .dessert-options {
+    width: 634px;
   }
 }
-.menu-restaurant .entree-options {
+.menu-restaurant form .entree-options {
   animation: fadein 1s;
 }
 @keyframes fadein {
@@ -332,21 +346,13 @@ header .location i {
     opacity: 1;
   }
 }
-
-.plat-options {
+.menu-restaurant form .plat-options {
   animation: fadein 2s;
 }
-
-.dessert-options {
+.menu-restaurant form .dessert-options {
   animation: fadein 3s;
 }
-
-form {
-  display: flex;
-  gap: 17px;
-  flex-direction: column;
-}
-form .card-option {
+.menu-restaurant .card-option {
   display: flex;
   justify-content: space-between;
   border: none;
@@ -361,10 +367,10 @@ form .card-option {
   cursor: pointer;
   /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : CE HOVER EST ICI SUR LE .price-checkbox DE FAÇON TEMPORAIRE */
 }
-form .card-option:hover .price-checkbox {
+.menu-restaurant .card-option:hover .price-checkbox {
   transform: translateX(0);
 }
-form .card-option .plats {
+.menu-restaurant .card-option .plats {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -376,7 +382,7 @@ form .card-option .plats {
   white-space: nowrap;
   width: calc(125% - 140px);
 }
-form .card-option .plats p {
+.menu-restaurant .card-option .plats p {
   font-size: 0.94rem;
   font-weight: 300;
   margin: 0;
@@ -385,14 +391,14 @@ form .card-option .plats p {
   width: calc(125% - 50px);
   overflow: hidden;
 }
-form .card-option .price-checkbox {
+.menu-restaurant .card-option .price-checkbox {
   display: flex;
   align-items: center;
   gap: 15px;
   transform: translateX(70px);
   transition: transform 0.5s ease;
 }
-form .card-option .price-checkbox input[type=checkbox] {
+.menu-restaurant .card-option .price-checkbox input[type=checkbox] {
   width: 0;
   /* 
     &:checked {
@@ -403,7 +409,7 @@ form .card-option .price-checkbox input[type=checkbox] {
     } 
   */
 }
-form .card-option .price-checkbox .price {
+.menu-restaurant .card-option .price-checkbox .price {
   display: flex;
   justify-content: flex-end;
   margin-top: 30px;
@@ -412,7 +418,7 @@ form .card-option .price-checkbox .price {
   font-size: 0.94rem;
   font-weight: 700;
 }
-form .card-option .price-checkbox .icon {
+.menu-restaurant .card-option .price-checkbox .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -545,6 +551,7 @@ footer .footer-content a i {
   transition: 300ms ease-out;
   width: 186px;
   align-self: center;
+  margin-top: 23px;
 }
 .btn-commander:hover {
   opacity: 0.8;
