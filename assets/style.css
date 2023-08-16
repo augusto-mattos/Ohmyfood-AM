@@ -41,7 +41,6 @@ h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   width: calc(125% - 50px);
-  overflow: hidden;
 }
 
 p {
@@ -319,6 +318,8 @@ header .location i {
   gap: 17px;
 }
 .menu-restaurant form label {
+  display: flex;
+  width: 100%;
   cursor: pointer;
 }
 .menu-restaurant form .entree-options,
@@ -365,9 +366,9 @@ header .location i {
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : CE HOVER EST ICI SUR LE .price-checkbox DE FAÇON TEMPORAIRE */
 }
 .menu-restaurant .card-option:hover .price-checkbox {
+  /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : LE HOVER SUR LE .card-option déplace le .price-checkbox vers la gauche */
   transform: translateX(0);
 }
 .menu-restaurant .card-option .plats {
@@ -389,7 +390,13 @@ header .location i {
   overflow: hidden;
   text-overflow: ellipsis;
   width: calc(125% - 50px);
-  overflow: hidden;
+}
+.menu-restaurant .card-option input[type=checkbox] {
+  display: none;
+}
+.menu-restaurant .card-option input[type=checkbox]:checked + .price-checkbox {
+  /* ceci permet au checkbox de rester affiché si selectionné */
+  transform: translateX(0);
 }
 .menu-restaurant .card-option .price-checkbox {
   display: flex;
@@ -397,17 +404,6 @@ header .location i {
   gap: 15px;
   transform: translateX(70px);
   transition: transform 0.5s ease;
-}
-.menu-restaurant .card-option .price-checkbox input[type=checkbox] {
-  width: 0;
-  /* 
-    &:checked {
-      transform: translateX(0);
-    }
-    &:not(:checked) {
-      transform: translateX(70px); 
-    } 
-  */
 }
 .menu-restaurant .card-option .price-checkbox .price {
   display: flex;
@@ -496,7 +492,7 @@ footer .footer-content a i {
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #ffffff;
   text-decoration: none;
   transition: 300ms ease-out;
@@ -545,7 +541,7 @@ footer .footer-content a i {
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #ffffff;
   text-decoration: none;
   transition: 300ms ease-out;
