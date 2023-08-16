@@ -39,7 +39,11 @@
     gap: 17px;
     label {
       display: flex;
+      position: absolute;
+      white-space: nowrap;
+      height: 69px;
       width: 100%;
+      top: -12px;
       cursor: pointer;
     }
     .entree-options,
@@ -91,14 +95,12 @@
     }
     .plats {
       display: flex;
+      position: relative;
       flex-direction: column;
       align-items: flex-start;
-      margin-top: 15px;
       margin-left: 15px;
-      margin-bottom: 15px;
       gap: 5px;
       overflow: hidden;
-      white-space: nowrap;
       width: calc(125% - 140px);
       p {
         font-size: 0.94rem;
