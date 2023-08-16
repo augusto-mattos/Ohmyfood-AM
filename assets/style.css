@@ -40,6 +40,7 @@ h4 {
   font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   width: calc(125% - 50px);
 }
 
@@ -319,7 +320,11 @@ header .location i {
 }
 .menu-restaurant form label {
   display: flex;
+  position: absolute;
+  white-space: nowrap;
+  height: 69px;
   width: 100%;
+  top: -12px;
   cursor: pointer;
 }
 .menu-restaurant form .entree-options,
@@ -373,14 +378,12 @@ header .location i {
 }
 .menu-restaurant .card-option .plats {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 15px;
   margin-left: 15px;
-  margin-bottom: 15px;
   gap: 5px;
   overflow: hidden;
-  white-space: nowrap;
   width: calc(125% - 140px);
 }
 .menu-restaurant .card-option .plats p {
@@ -389,6 +392,7 @@ header .location i {
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   width: calc(125% - 50px);
 }
 .menu-restaurant .card-option input[type=checkbox] {
