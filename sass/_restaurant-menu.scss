@@ -38,6 +38,8 @@
     flex-direction: column;
     gap: 17px;
     label {
+      display: flex;
+      width: 100%;
       cursor: pointer;
     }
     .entree-options,
@@ -83,8 +85,8 @@
       rgba(0, 0, 0, 0.1);
     overflow: hidden;
     cursor: pointer;
-    /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : CE HOVER EST ICI SUR LE .price-checkbox DE FAÇON TEMPORAIRE */
     &:hover .price-checkbox {
+      /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : LE HOVER SUR LE .card-option déplace le .price-checkbox vers la gauche */
       transform: translateX(0);
     }
     .plats {
@@ -105,23 +107,19 @@
         @include ellipsis;
       }
     }
+    input[type="checkbox"] {
+      display: none;
+      &:checked + .price-checkbox {
+        /* ceci permet au checkbox de rester affiché si selectionné */
+        transform: translateX(0);
+      }
+    }
     .price-checkbox {
       display: flex;
       align-items: center;
       gap: 15px;
       transform: translateX(70px);
       transition: transform 0.5s ease;
-      input[type="checkbox"] {
-        width: 0;
-        /* 
-          &:checked {
-            transform: translateX(0);
-          }
-          &:not(:checked) {
-            transform: translateX(70px); 
-          } 
-        */
-      }
       .price {
         display: flex;
         justify-content: flex-end;
