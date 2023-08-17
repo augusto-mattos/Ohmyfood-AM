@@ -44,7 +44,7 @@ h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: calc(125% - 60px);
+  width: calc(125% - 80px);
 }
 
 p {
@@ -396,7 +396,7 @@ header .location i {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: calc(125% - 60px);
+  width: calc(125% - 80px);
 }
 .menu-restaurant .card-option input[type=checkbox] {
   display: none;
@@ -576,8 +576,12 @@ footer .footer-content a i {
   0% {
     opacity: 1;
   }
+  99% {
+    width: 100%;
+  }
   100% {
     display: none;
+    width: 0;
     opacity: 0;
   }
 }
