@@ -39,7 +39,7 @@
     gap: 17px;
     label {
       display: flex;
-      position: absolute;
+      /* position: absolute; */
       white-space: nowrap;
       height: 69px;
       width: 100%;
@@ -104,7 +104,7 @@
       gap: 5px;
       overflow: hidden;
       width: calc(125% - 140px);
-      p {
+      .description {
         font-size: 0.94rem;
         font-weight: 300;
         margin: 0;

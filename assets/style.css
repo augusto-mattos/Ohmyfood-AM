@@ -38,7 +38,7 @@ h3::after {
   background-color: #99e2d0;
 }
 
-h4 {
+.h4 {
   margin: 0;
   font-size: 1.125rem;
   font-weight: 500;
@@ -324,7 +324,7 @@ header .location i {
 }
 .menu-restaurant form label {
   display: flex;
-  position: absolute;
+  /* position: absolute; */
   white-space: nowrap;
   height: 69px;
   width: 100%;
@@ -392,7 +392,7 @@ header .location i {
   overflow: hidden;
   width: calc(125% - 140px);
 }
-.menu-restaurant .card-option .plats p {
+.menu-restaurant .card-option .plats .description {
   font-size: 0.94rem;
   font-weight: 300;
   margin: 0;
@@ -598,7 +598,7 @@ footer .footer-content a i {
   border-radius: 50%;
   border: 5px solid #99e2d0;
   border-top-color: #9356dc;
-  animation: loader-circle 1750ms;
+  animation: loader-circle 1750ms infinite;
 }
 @keyframes loader-circle {
   0% {
