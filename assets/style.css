@@ -99,11 +99,17 @@ header .location i {
   background: none;
   color: #353535;
   margin-left: 17px;
+  position: absolute;
+  margin-right: 0px;
+  left: 17px;
 }
 .header-pages .logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
   max-width: 375px;
   max-height: 63px;
-  margin: 23px 89px 13px 0;
+  margin: 23px 0 13px 0;
   padding-left: 16px;
   padding-right: 19px;
 }
