@@ -323,13 +323,7 @@ header .location i {
   gap: 17px;
 }
 .menu-restaurant form label {
-  display: flex;
-  /* position: absolute; */
   white-space: nowrap;
-  height: 69px;
-  width: 100%;
-  top: -12px;
-  cursor: pointer;
 }
 .menu-restaurant form .entree-options,
 .menu-restaurant form .plat-options,
@@ -384,7 +378,6 @@ header .location i {
 }
 .menu-restaurant .card-option .plats {
   display: flex;
-  position: relative;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 15px;

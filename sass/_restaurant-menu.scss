@@ -38,13 +38,7 @@
     flex-direction: column;
     gap: 17px;
     label {
-      display: flex;
-      /* position: absolute; */
       white-space: nowrap;
-      height: 69px;
-      width: 100%;
-      top: -12px;
-      cursor: pointer;
     }
     .entree-options,
     .plat-options,
@@ -97,7 +91,6 @@
     }
     .plats {
       display: flex;
-      position: relative;
       flex-direction: column;
       align-items: flex-start;
       margin-left: 15px;
