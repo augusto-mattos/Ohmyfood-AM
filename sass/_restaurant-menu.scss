@@ -89,9 +89,11 @@
       rgba(0, 0, 0, 0.1);
     overflow: hidden;
     cursor: pointer;
-    &:hover .price-checkbox {
-      /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : LE HOVER SUR LE .card-option déplace le .price-checkbox vers la gauche */
-      transform: translateX(0);
+    @media (min-width: 1024px) {
+      &:hover .price-checkbox {
+        /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : LE HOVER SUR LE .card-option déplace le .price-checkbox vers la gauche */
+        transform: translateX(0);
+      }
     }
     .plats {
       display: flex;
