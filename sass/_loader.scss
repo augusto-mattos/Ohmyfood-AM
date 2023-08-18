@@ -31,7 +31,7 @@
     border-radius: 50%;
     border: 5px solid $tertiary-color;
     border-top-color: $primary-color;
-    animation: loader-circle 1750ms;
+    animation: loader-circle 1750ms infinite;
   }
   @keyframes loader-circle {
     0% {
