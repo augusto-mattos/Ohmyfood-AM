@@ -1,6 +1,5 @@
 .restaurants {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   gap: 18px;
   padding: 60px 20px;
   background: $grey-3;
@@ -9,8 +8,7 @@
     padding-right: 180px;
   }
   .cards-restaurants {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 18px;
     @media (min-width: 1024px) {
       display: grid;
@@ -34,44 +32,39 @@
         margin-bottom: 19px;
       }
     }
-      div {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        padding-left: 13px;
-        padding-right: 13px;
-        gap: 13px;
-        a {
-          width: 100%;
-        }
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-left: 13px;
+      padding-right: 13px;
+      a {
+        width: 100%;
       }
-      .card-content {
-        flex-direction: column;
-        padding: 0;
-        p {
-          font-size: 1.0625rem;
-          font-weight: 300;
-          color: #000;
-          margin-top: 5px;
-          margin-bottom: 12px;
-        }
+    }
+    .card-content {
+      flex-direction: column;
+      padding: 0;
+      p {
+        font-size: 1.0625rem;
+        font-weight: 300;
+        color: #000;
+        margin-top: 5px;
+        margin-bottom: 12px;
       }
     }
   }
-  .tag-nouveau {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 62px;
-    height: 16px;
-    margin: 0;
-    padding: 7px 9px 9px 6px;
-    border-radius: 2px;
-    position: absolute;
-    bottom: 216px;
-    right: 10px;
-    color: #008766;
-    background-color: $tertiary-color;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  }
-
+}
+.tag-nouveau {
+  width: 62px;
+  height: 16px;
+  margin: 0;
+  padding: 7px 9px 9px 6px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 216px;
+  right: 10px;
+  color: #008766;
+  background-color: $tertiary-color;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}

@@ -178,6 +178,7 @@ header .location i {
   justify-content: flex-start;
   position: relative;
   padding-left: 34.5px;
+  padding-right: 35px;
   gap: 27px;
   height: 72.4px;
   max-width: 100%;
@@ -254,7 +255,6 @@ header .location i {
   align-items: baseline;
   padding-left: 13px;
   padding-right: 13px;
-  gap: 13px;
 }
 .restaurants .card div a {
   width: 100%;
@@ -272,9 +272,6 @@ header .location i {
 }
 
 .tag-nouveau {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 62px;
   height: 16px;
   margin: 0;
@@ -340,8 +337,8 @@ header .location i {
 .menu-restaurant form .plat-options,
 .menu-restaurant form .dessert-options {
   display: flex;
-  gap: 17px;
   flex-direction: column;
+  gap: 17px;
 }
 @media (min-width: 1024px) {
   .menu-restaurant form .entree-options,
@@ -351,7 +348,7 @@ header .location i {
   }
 }
 .menu-restaurant form .entree-options {
-  animation: fadein 1s;
+  animation: fadein 1000ms;
 }
 @keyframes fadein {
   from {
@@ -362,20 +359,20 @@ header .location i {
   }
 }
 .menu-restaurant form .plat-options {
-  animation: fadein 2s;
+  animation: fadein 2500ms;
 }
 .menu-restaurant form .dessert-options {
-  animation: fadein 3s;
+  animation: fadein 4000ms;
 }
 .menu-restaurant .card-option {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: none;
   padding: 0;
   height: 69px;
   width: 100%;
   background-color: #ffffff;
-  align-items: center;
   border-radius: 15px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -520,7 +517,8 @@ footer .footer-content a i {
   display: flex;
   align-items: center;
   border: none;
-  margin-right: 35px;
+  margin-right: 25px;
+  margin-left: 13px;
   background: none;
   padding: 0;
   position: relative;
