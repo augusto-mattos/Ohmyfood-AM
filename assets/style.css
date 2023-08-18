@@ -99,8 +99,15 @@ header .location i {
   background: none;
   color: #353535;
   margin-left: 17px;
+  position: absolute;
+  margin-right: 0px;
+  left: 17px;
 }
 .header-pages .logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-right: 0px;
   max-width: 375px;
   max-height: 63px;
   margin: 23px 89px 13px 0;
