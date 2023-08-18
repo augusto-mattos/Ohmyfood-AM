@@ -1,15 +1,13 @@
 .main-restaurant {
   background: $grey-3;
   @media (min-width: 1024px) {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     background: #ffffff;
   }
 }
 .menu-restaurant {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   gap: 40px;
   background-color: $grey-3;
   padding: 32px 17px 32px 17px;
@@ -34,8 +32,7 @@
   }
 
   form {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 17px;
     label {
       white-space: nowrap;
@@ -43,15 +40,14 @@
     .entree-options,
     .plat-options,
     .dessert-options {
-      display: flex;
+      @include flex-column;
       gap: 17px;
-      flex-direction: column;
       @media (min-width: 1024px) {
         width: 634px;
       }
     }
     .entree-options {
-      animation: fadein 1s;
+      animation: fadein 1000ms;
     }
     @keyframes fadein {
       from {
@@ -62,22 +58,22 @@
       }
     }
     .plat-options {
-      animation: fadein 2s;
+      animation: fadein 2500ms;
     }
     .dessert-options {
-      animation: fadein 3s;
+      animation: fadein 4000ms;
     }
   }
 
   .card-option {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: none;
     padding: 0;
     height: 69px;
     width: 100%;
     background-color: #ffffff;
-    align-items: center;
     border-radius: 15px;
     box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px
       rgba(0, 0, 0, 0.1);
@@ -90,8 +86,7 @@
       }
     }
     .plats {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       align-items: flex-start;
       margin-left: 15px;
       gap: 5px;
