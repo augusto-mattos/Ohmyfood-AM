@@ -8,6 +8,7 @@ body {
   color: #000;
   font-style: normal;
   line-height: normal;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -375,9 +376,11 @@ header .location i {
   overflow: hidden;
   cursor: pointer;
 }
-.menu-restaurant .card-option:hover .price-checkbox {
-  /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : LE HOVER SUR LE .card-option déplace le .price-checkbox vers la gauche */
-  transform: translateX(0);
+@media (min-width: 1024px) {
+  .menu-restaurant .card-option:hover .price-checkbox {
+    /* SIMULATION D'ANIMATION DES CARDS AVEC LA SELECTION DU CHECKBOX : LE HOVER SUR LE .card-option déplace le .price-checkbox vers la gauche */
+    transform: translateX(0);
+  }
 }
 .menu-restaurant .card-option .plats {
   display: flex;
