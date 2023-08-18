@@ -248,25 +248,30 @@ header .location i {
   border-radius: 15px 15px 0 0;
   margin-bottom: 19px;
 }
-.restaurants .card a div {
+.restaurants .card div {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding-left: 13px;
   padding-right: 13px;
+  gap: 13px;
 }
-.restaurants .card a .card-content {
+.restaurants .card div a {
+  width: 100%;
+}
+.restaurants .card .card-content {
   flex-direction: column;
   padding: 0;
 }
-.restaurants .card a .card-content p {
+.restaurants .card .card-content p {
   font-size: 1.0625rem;
   font-weight: 300;
   color: #000;
   margin-top: 5px;
   margin-bottom: 12px;
 }
-.restaurants .tag-nouveau {
+
+.tag-nouveau {
   display: flex;
   justify-content: center;
   align-items: center;
