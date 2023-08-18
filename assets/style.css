@@ -107,10 +107,9 @@ header .location i {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-right: 0px;
   max-width: 375px;
   max-height: 63px;
-  margin: 23px 89px 13px 0;
+  margin: 23px 0 13px 0;
   padding-left: 16px;
   padding-right: 19px;
 }
