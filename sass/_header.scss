@@ -1,3 +1,5 @@
+@use "variables"; 
+
 header {
   display: flex;
   flex-direction: column;
@@ -18,8 +20,8 @@ header {
     width: 100%;
     height: 50px;
     gap: 17px;
-    color: $grey-1;
-    background-color: $grey-2;
+    color: variables.$grey-1;
+    background-color: variables.$grey-2;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 5px 5px 0px inset;
     i {
       width: 12px;
@@ -40,7 +42,7 @@ header {
     padding: 0;
     border: none;
     background: none;
-    color: $grey-1;
+    color: variables.$grey-1;
     margin-left: 17px;
     position: absolute;
     margin-right: 0px;

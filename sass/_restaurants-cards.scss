@@ -1,14 +1,17 @@
+@use "variables"; 
+@use "mixins";
+
 .restaurants {
-  @include flex-column;
+  @include mixins.flex-column;
   gap: 18px;
   padding: 60px 20px;
-  background: $grey-3;
+  background: variables.$grey-3;
   @media (min-width: 1024px) {
     padding-left: 180px;
     padding-right: 180px;
   }
   .cards-restaurants {
-    @include flex-column;
+    @include mixins.flex-column;
     gap: 18px;
     @media (min-width: 1024px) {
       display: grid;
@@ -65,6 +68,6 @@
   bottom: 216px;
   right: 10px;
   color: #008766;
-  background-color: $tertiary-color;
+  background-color: variables.$tertiary-color;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }

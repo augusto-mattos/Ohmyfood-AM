@@ -1,15 +1,18 @@
+@use "variables"; 
+@use "mixins";
+
 .main-restaurant {
-  background: $grey-3;
+  background: variables.$grey-3;
   @media (min-width: 1024px) {
-    @include flex-column;
+    @include mixins.flex-column;
     align-items: center;
     background: #ffffff;
   }
 }
 .menu-restaurant {
-  @include flex-column;
+  @include mixins.flex-column;
   gap: 40px;
-  background-color: $grey-3;
+  background-color: variables.$grey-3;
   padding: 32px 17px 32px 17px;
   border-radius: 20px 20px 0 0;
   margin-top: -40px;
@@ -24,7 +27,7 @@
     justify-content: left;
     gap: 33px;
     h1 {
-      color: $black-1;
+      color: variables.$black-1;
       font-family: Shrikhand;
       font-size: 1.75rem;
       font-weight: 400;
@@ -32,7 +35,7 @@
   }
 
   form {
-    @include flex-column;
+    @include mixins.flex-column;
     gap: 17px;
     label {
       white-space: nowrap;
@@ -40,7 +43,7 @@
     .entree-options,
     .plat-options,
     .dessert-options {
-      @include flex-column;
+      @include mixins.flex-column;
       gap: 17px;
       @media (min-width: 1024px) {
         width: 634px;
@@ -86,7 +89,7 @@
       }
     }
     .plats {
-      @include flex-column;
+      @include mixins.flex-column;
       align-items: flex-start;
       margin-left: 15px;
       gap: 5px;
@@ -96,7 +99,7 @@
         font-size: 0.94rem;
         font-weight: 300;
         margin: 0;
-        @include ellipsis;
+        @include mixins.ellipsis;
       }
     }
     input[type="checkbox"] {
@@ -117,7 +120,7 @@
         justify-content: flex-end;
         margin-top: 30px;
         margin-left: 15px;
-        color: $grey-1;
+        color: variables.$grey-1;
         font-size: 0.94rem;
         font-weight: 700;
       }
@@ -128,7 +131,7 @@
         width: 69px;
         height: 69px;
         color: white;
-        background: $tertiary-color;
+        background: variables.$tertiary-color;
         border-radius: 0 15px 15px 0;
       }
     }
