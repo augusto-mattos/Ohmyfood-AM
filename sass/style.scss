@@ -1,14 +1,14 @@
-@import "variables";
-@import "mixins";
+@use "variables";
+@use "mixins";
 
-@import "typography";
+@use "typography";
 
-@import "header";
-@import "hero";
-@import "fonctionnement";
-@import "restaurants-cards";
-@import "restaurant-menu";
-@import "footer";
+@use "header";
+@use "hero";
+@use "fonctionnement";
+@use "restaurants-cards";
+@use "restaurant-menu";
+@use "footer";
 
-@import "buttons";
-@import "loader";
+@use "buttons";
+@use "loader";

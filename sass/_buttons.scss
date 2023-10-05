@@ -1,5 +1,8 @@
+@use "variables"; 
+@use "mixins";
+
 .btn-explorer {
-  @include btn-primary();
+  @include mixins.btn-primary();
 }
 
 .btn-like {
@@ -21,7 +24,7 @@
   .full-heart {
     font-size: 1.05rem;
     position: absolute;
-    background: linear-gradient(0deg, $secondary-color 0%, $primary-color 100%);
+    background: linear-gradient(0deg, variables.$secondary-color 0%, variables.$primary-color 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -34,7 +37,7 @@
 }
 
 .btn-commander {
-  @include btn-primary();
+  @include mixins.btn-primary();
   width: 186px;
   align-self: center;
   margin-top: 23px;

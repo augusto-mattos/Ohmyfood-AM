@@ -1,5 +1,7 @@
+@use "variables"; 
+
 .loader {
-  background-color: $grey-3;
+  background-color: variables.$grey-3;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -29,8 +31,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 5px solid $tertiary-color;
-    border-top-color: $primary-color;
+    border: 5px solid variables.$tertiary-color;
+    border-top-color: variables.$primary-color;
     animation: loader-circle 1750ms infinite;
   }
   @keyframes loader-circle {

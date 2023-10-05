@@ -1,7 +1,9 @@
+@use "variables"; 
+
 footer {
   display: flex;
   flex-direction: column;
-  background-color: $grey-1;
+  background-color: variables.$grey-1;
   padding: 22px 25px;
   @media (min-width: 1024px) {
     flex-direction: row-reverse;
